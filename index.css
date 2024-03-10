@@ -1,0 +1,54 @@
+body{
+    margin:0;
+    padding:0
+}
+/* css du header */
+header img{
+ width: auto;
+ height: 95px;
+ padding: 0;
+}
+header{
+    display: flex;
+    background-color: orange;
+}
+div a{
+    text-decoration: none;
+    color:white;
+    font-size: 1rem;
+    margin-left: 6px;
+}
+.lien_login{
+    margin-top: 40px;
+}
+nav a{
+    text-decoration: none;
+    color:white;
+    margin-right: 40px;
+    font-size: 1rem;
+}
+nav{
+    margin-top: 40px;
+    margin-left: 350px;
+    margin-right: 60px;
+}
+/* css de la première partie */
+h1{
+    text-align: center;
+    word-spacing: 8px;
+    font-size: 3rem;
+    color: #3011bc    ;
+    margin-top: 160px;
+    margin-bottom: 80px;
+}
+div button{
+    background-color: orange;
+    border-style:solid;
+    border-width: thin;
+    border-color: white;
+    padding: 8px;
+    color:white;
+    font-size: 1.4rem;
+    margin-left: 43%;
+    border-radius: 19px;
+}

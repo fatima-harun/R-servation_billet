@@ -1,0 +1,49 @@
+body{
+    margin:0;
+}
+/* css du navabr */
+.train{
+    width: auto;
+    height:90px ;
+}
+nav a{
+    text-decoration: none;
+    color:white;
+    margin-right: 70px;
+    font-size:1.2rem
+}
+nav{
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 150px;
+    margin-top: 30px;
+}
+header{
+    display:flex;
+    background-color: #3011bc;
+}
+div a{
+  text-decoration: none;
+  color:white;
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+.lien_login{
+    margin-top:5px
+}
+/* css du formulaire */
+/* form{
+    text-align: center;
+    border: solid thin ;
+}
+div button{
+    margin-top: 15px;
+}
+.heure_actuelle{
+    margin-top: 10px;
+} */
+.first_part{
+    display:flex;
+    margin:0
+}
+
