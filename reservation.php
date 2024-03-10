@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Achat de billet</title>
+    <title>Réservation de billet</title>
     <link rel="stylesheet" href="reserve.css">
 </head>
 <body>
@@ -100,6 +100,7 @@
 // connexion à la base de données
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 require_once "connexion.php";
+$id=$_POST['id_billet'];
 $depart=$_POST['lieu_de_depart']; 
 $lieu_destination=$_POST['Lieu_de_destination'];
 $date=$_POST['Date_depart'];
