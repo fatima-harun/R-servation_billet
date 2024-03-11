@@ -28,11 +28,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modification de mon billet </title>
-    <link rel="stylesheet" href="reserve.css">
+    <link rel="stylesheet" href="reservation.css">
 </head>
 <body>
    <header>
-      <div><img src="images\Train Express.png" alt="logo_train" class="train"></div>
+   <div><img src="images\logo.png" alt="logo" class="logo"></div>
       <nav>
        <a href="">Itinéraires</a>
        <a href="">Horaires</a>
@@ -63,37 +63,37 @@ $row=mysqli_fetch_assoc($billet);
      <div>
        <label for="">Lieu de départ</label><br>
         <select name="lieu_de_depart" id="" value="<?php echo $row['lieu_de_depart']; ?>">
-            <option value="Dakar"<?php if ($row['lieu_de_depart'] == 'Dakar') echo 'selected'; ?>>Dakar</option>
-            <option value="Colobanne"<?php if ($row['lieu_de_depart'] == 'Colobanne') echo 'selected'; ?>>Colobanne</option>
-            <option value="Hann"<?php if ($row['lieu_de_depart'] == 'Hann') echo 'selected'; ?>>Hann</option>
-            <option value="Dalifort"<?php if ($row['lieu_de_depart'] == 'Dalifort') echo 'selected'; ?>>Dalifort</option>
-            <option value="Beaux maraichers"<?php if ($row['lieu_de_depart'] == 'Beaux maraichers') echo 'selected'; ?>>Beaux maraichers</option>
-            <option value="Pikine"<?php if ($row['lieu_de_depart'] == 'Pikine') echo 'selected'; ?>>Pikine</option>
-            <option value="Thiaroye"<?php if ($row['lieu_de_depart'] == 'Thiaroye') echo 'selected'; ?>>Thiaroye</option>
-            <option value="Yeumbeul"<?php if ($row['lieu_de_depart'] == 'Yeumbeul') echo 'selected'; ?>>Yeumbeul</option>
-            <option value="Keur Mbaye Fall"<?php if ($row['lieu_de_depart'] == 'Keur Mbaye Fall') echo 'selected'; ?>>Keur Mbaye fall</option>
-            <option value="PNR"<?php if ($row['lieu_de_depart'] == 'PNR') echo 'selected'; ?>>PNR</option>
-            <option value="Rufisque"<?php if ($row['lieu_de_depart'] == 'Rufisque') echo 'selected'; ?>>Rufisque</option>
-            <option value="Bargny"<?php if ($row['lieu_de_depart'] == 'Bargny') echo 'selected'; ?>>Bargny</option>
-            <option value="Diamniadio"<?php if ($row['lieu_de_depart'] == 'Diamniadio') echo 'selected'; ?>>Diamniadio</option>
+            <option value="Sénégal"<?php if ($row['lieu_de_depart'] == 'Sénégal') echo 'selected'; ?>>Sénégal</option>
+            <option value="Nigéria"<?php if ($row['lieu_de_depart'] == 'Nigéria') echo 'selected'; ?>>Nigéria</option>
+            <option value="Cap-vert"<?php if ($row['lieu_de_depart'] == 'Cap-vert') echo 'selected'; ?>>Cap-vert</option>
+            <option value="Seychelles"<?php if ($row['lieu_de_depart'] == 'Seychelles') echo 'selected'; ?>>Seychelles</option>
+            <option value="Mali"<?php if ($row['lieu_de_depart'] == 'Mali') echo 'selected'; ?>>Mali</option>
+            <option value="Maroc"<?php if ($row['lieu_de_depart'] == 'Maroc') echo 'selected'; ?>>Maroc</option>
+            <option value="Burkina Faso"<?php if ($row['lieu_de_depart'] == 'Burkina Faso') echo 'selected'; ?>>Burkina Faso</option>
+            <option value="Afrique du Sud"<?php if ($row['lieu_de_depart'] == 'Afrique du Sud') echo 'selected'; ?>>Afrique du Sud</option>
+            <option value="Niger"<?php if ($row['lieu_de_depart'] == 'Niger') echo 'selected'; ?>>Niger</option>
+            <option value="Cameroun"<?php if ($row['lieu_de_depart'] == 'Cameroun') echo 'selected'; ?>>Cameroun</option>
+            <option value="Comores"<?php if ($row['lieu_de_depart'] == 'Comores') echo 'selected'; ?>>Comores</option>
+            <option value="Mauritanie"<?php if ($row['lieu_de_depart'] == 'Mauritanie') echo 'selected'; ?>>Mauritanie</option>
+            <option value="Egypte"<?php if ($row['lieu_de_depart'] == 'Egypte') echo 'selected'; ?>>Egypte</option>
         </select>
      </div>
      <div>
        <label for="">Lieu de destination</label><br>
        <select name="Lieu_de_destination" id="" value="<?php echo $row['Lieu_de_destination']; ?>">
-       <option value="Dakar"<?php if ($row['Lieu_de_destination'] == 'Dakar') echo 'selected'; ?>>Dakar</option>
-            <option value="Colobanne"<?php if ($row['Lieu_de_destination'] == 'Colobanne') echo 'selected'; ?>>Colobanne</option>
-            <option value="Hann"<?php if ($row['Lieu_de_destination'] == 'Hann') echo 'selected'; ?>>Hann</option>
-            <option value="Dalifort"<?php if ($row['Lieu_de_destination'] == 'Dalifort') echo 'selected'; ?>>Dalifort</option>
-            <option value="Beaux maraichers"<?php if ($row['Lieu_de_destination'] == 'Beaux maraichers') echo 'selected'; ?>>Beaux maraichers</option>
-            <option value="Pikine"<?php if ($row['Lieu_de_destination'] == 'Pikine') echo 'selected'; ?>>Pikine</option>
-            <option value="Thiaroye"<?php if ($row['Lieu_de_destination'] == 'Thiaroye') echo 'selected'; ?>>Thiaroye</option>
-            <option value="Yeumbeul"<?php if ($row['Lieu_de_destination'] == 'Yeumbeul') echo 'selected'; ?>>Yeumbeul</option>
-            <option value="Keur Mbaye Fall"<?php if ($row['Lieu_de_destination'] == 'Keur Mbaye Fall') echo 'selected'; ?>>Keur Mbaye fall</option>
-            <option value="PNR"<?php if ($row['Lieu_de_destination'] == 'PNR') echo 'selected'; ?>>PNR</option>
-            <option value="Rufisque"<?php if ($row['Lieu_de_destination'] == 'Rufisque') echo 'selected'; ?>>Rufisque</option>
-            <option value="Bargny"<?php if ($row['Lieu_de_destination'] == 'Bargny') echo 'selected'; ?>>Bargny</option>
-            <option value="Diamniadio"<?php if ($row['Lieu_de_destination'] == 'Diamniadio') echo 'selected'; ?>>Diamniadio</option>
+       <option value="Sénégal"<?php if ($row['Lieu_de_destination'] == 'Sénégal') echo 'selected'; ?>>Sénégal</option>
+            <option value="Nigéria"<?php if ($row['Lieu_de_destination'] == 'Nigéria') echo 'selected'; ?>>Nigéria</option>
+            <option value="Cap-vert"<?php if ($row['Lieu_de_destination'] == 'Cap-vert') echo 'selected'; ?>>Cap-vert</option>
+            <option value="Seychelles"<?php if ($row['Lieu_de_destination'] == 'Seychelles') echo 'selected'; ?>>Seychelles</option>
+            <option value="Mali"<?php if ($row['Lieu_de_destination'] == 'Mali') echo 'selected'; ?>>Mali</option>
+            <option value="Maroc"<?php if ($row['Lieu_de_destination'] == 'Maroc') echo 'selected'; ?>>Maroc</option>
+            <option value="Burkina Faso"<?php if ($row['Lieu_de_destination'] == 'Burkina Faso') echo 'selected'; ?>>Burkina Faso</option>
+            <option value="Afrique du Sud"<?php if ($row['Lieu_de_destination'] == 'Afrique du Sud') echo 'selected'; ?>>Afrique du Sud</option>
+            <option value="Niger"<?php if ($row['Lieu_de_destination'] == 'Niger') echo 'selected'; ?>>Niger</option>
+            <option value="Cameroun"<?php if ($row['Lieu_de_destination'] == 'Cameroun') echo 'selected'; ?>>Cameroun</option>
+            <option value="Comores"<?php if ($row['Lieu_de_destination'] == 'Comores') echo 'selected'; ?>>Comores</option>
+            <option value="Mauritanie"<?php if ($row['Lieu_de_destination'] == 'Mauritanie') echo 'selected'; ?>>Mauritanie</option>
+            <option value="Egypte"<?php if ($row['Lieu_de_destination'] == 'Egypte') echo 'selected'; ?>>Egypte</option>
         </select>
      </div>
  </div>
