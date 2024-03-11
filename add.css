@@ -1,0 +1,50 @@
+body{
+    margin:0;
+    background-color:rgb(246, 240, 240) ;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.819), rgba(0, 0, 0, 0.552) );
+}
+.logo{
+    width: auto;
+    height: 50px;
+}
+header{
+    display:flex;
+    justify-content: space-around;
+    background-color: rgb(246, 240, 240);
+    /* padding-bottom: 10px; */
+    padding-top: 9px;
+    margin-bottom: 0;
+}
+.navbar{
+    margin-top: 12px;
+}
+header a{
+    text-decoration: none;
+    margin-left: 12px;
+    color: orange;
+}
+.heure{
+    border-style: none;
+}
+.billet{
+    display:flex;
+    justify-content: space-around;
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-left: 55px;
+    margin-top: 35px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.322), rgba(0, 0, 0, 0.582) ),url('first_background.jpg');
+    background-size: cover;
+    border-style: none;
+    color:white;
+    font-weight: bolder;
+}
+.lien{
+   margin-top: 175px;
+}
+.lien a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}

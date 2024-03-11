@@ -3,21 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Achat de billet</title>
-    <link rel="stylesheet" href="reserve.css">
+    <title>Réservation de billet</title>
+    <link rel="stylesheet" href="reservation.css">
 </head>
 <body>
    <header>
-      <div><img src="images\Train Express.png" alt="logo_train" class="train"></div>
-      <nav>
-       <a href="">Itinéraires</a>
-       <a href="">Horaires</a>
-       <a href="">Réservations</a>
-       <a href="">Nous contacter</a>
-      </nav>
-      <div class="lien_login">
-        <a href="">Se connecter</a>
-        <a href="">Ouvrir un compte</a>
+      <div><img src="images\logo.png" alt="logo" class="logo"></div>
+        <div class="navbar">
+            <a href="">Destinations</a>
+            <a href="">Itinéraires</a>
+            <a href="">Réservations</a>
+            <a href="">Se connecter</a>
+            <a href="">Ouvrir un compte</a>
         </div>
    </header>
    <div class="first_part">
@@ -29,44 +26,44 @@
      <div>
        <label for="">Lieu de départ</label><br>
         <select name="lieu_de_depart" id="">
-            <option value="Dakar">Dakar</option>
-            <option value="Colobanne">Colobanne</option>
-            <option value="Hann">Hann</option>
-            <option value="Dalifort">Dalifort</option>
-            <option value="Beaux maraichers">Beaux maraichers</option>
-            <option value="Pikine">Pikine</option>
-            <option value="Thiaroye">Thiaroye</option>
-            <option value="Yeumbeul">Yeumbeul</option>
-            <option value="Keur Mbaye Fall">Keur Mbaye fall</option>
-            <option value="PNR">PNR</option>
-            <option value="Rufisque">Rufisque</option>
-            <option value="Bargny">Bargny</option>
-            <option value="Diamniadio">Diamniadio</option>
+            <option value="Sénégal">Sénégal</option>
+            <option value="Nigéria">Nigéria</option>
+            <option value="Cap-vert">Cap-vert</option>
+            <option value="Seychelles">Seychelles</option>
+            <option value="Mali">Mali</option>
+            <option value="Maroc">Maroc</option>
+            <option value="Burkina Faso">Burkina Faso</option>
+            <option value="Afrique du Sud">Afrique du sud</option>
+            <option value="Niger">Niger</option>
+            <option value="Cameroun">Cameroun</option>
+            <option value="Comores">Comores</option>
+            <option value="Mauritanie">Mauritanie</option>
+            <option value="Egypte">Egypte</option>
         </select>
      </div>
      <div>
        <label for="">Lieu de destination</label><br>
        <select name="Lieu_de_destination" id="">
-            <option value="Dakar">Dakar</option>
-            <option value="Colobanne">Colobanne</option>
-            <option value="Hann">Hann</option>
-            <option value="Dalifort">Dalifort</option>
-            <option value="Beaux maraichers">Beaux maraichers</option>
-            <option value="Pikine">Pikine</option>
-            <option value="Thiaroye">Thiaroye</option>
-            <option value="Yeumbeul">Yeumbeul</option>
-            <option value="Keur Mbaye Fall">Keur Mbaye fall</option>
-            <option value="PNR">PNR</option>
-            <option value="Rufisque">Rufisque</option>
-            <option value="Bargny">Bargny</option>
-            <option value="Diamniadio">Diamniadio</option>
+       <option value="Sénégal">Sénégal</option>
+            <option value="Nigéria">Nigéria</option>
+            <option value="Cap-vert">Cap-vert</option>
+            <option value="Seychelles">Seychelles</option>
+            <option value="Mali">Mali</option>
+            <option value="Maroc">Maroc</option>
+            <option value="Burkina Faso">Burkina Faso</option>
+            <option value="Afrique du Sud">Afrique du sud</option>
+            <option value="Niger">Niger</option>
+            <option value="Cameroun">Cameroun</option>
+            <option value="Comores">Comores</option>
+            <option value="Mauritanie">Mauritanie</option>
+            <option value="Egypte">Egypte</option>
         </select>
      </div>
  </div>
     <!-- second div -->
     <div class="champ_form">
         <div>
-           <label for="">Date</label><br>
+           <label for="">Date de départ</label><br>
             <input type="date" name="Date_depart">
         </div>
         <div>
@@ -100,6 +97,7 @@
 // connexion à la base de données
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 require_once "connexion.php";
+// $id=$_POST['id_billet'];
 $depart=$_POST['lieu_de_depart']; 
 $lieu_destination=$_POST['Lieu_de_destination'];
 $date=$_POST['Date_depart'];
